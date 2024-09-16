@@ -1,0 +1,47 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.pyo
+
+# Django
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+# Local Django settings
+.env
+.local
+.env.*
+
+# Ignore all local static files
+/staticfiles/
+/mediafiles/
+
+# Ignore static files generated from collectstatic
+/static/
+/media/
+
+# Ignore virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# Node.js (if using npm or yarn)
+/node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# macOS-specific files
+.DS_Store
+
+# VSCode settings (if using VSCode)
+.vscode/
