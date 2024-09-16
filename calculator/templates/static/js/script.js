@@ -31,3 +31,15 @@ function x() {
     document.getElementById('res').value = document.getElementById('res').value.substring(0, document.getElementById('res').value.length - 1);
 }
 }
+function sqrt() {
+    try {
+        var currentValue = document.getElementById('res').value;
+        if (currentValue) {
+            var result = Math.sqrt(eval(currentValue));
+            document.getElementById('calc-history').innerHTML += "<div>√" + currentValue + " = " + result + "</div>";
+            s(result);
+        }
+    } catch(e) {
+        s('Error');
+    }
+}
